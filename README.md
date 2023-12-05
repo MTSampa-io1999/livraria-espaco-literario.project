@@ -20,7 +20,7 @@ Este repositório contém um projeto dedicado à administração de um sistema d
 **Compra de Livros:**
 
 + Implementação de uma funcionalidade de compra de livros dentro do programa.
-+Detalhes como preço do livro e informações básicas são exibidos durante o processo de compra.
++ Detalhes como preço do livro e informações básicas são exibidos durante o processo de compra.
 
 **Lógica Básica de Livraria:**
 
@@ -35,9 +35,9 @@ Este repositório contém um projeto dedicado à administração de um sistema d
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **Um desenvolvedor** - *Trabalho Inicial* - [
+* **William Gabriel** - *Dev trabalhando no Projeto inicial.* - 
 * **Mateus Sampaio** - *Dev trabalhando no Projeto inicial.* - [@MTSampa-io1999](https://github.com/MTSampa-io1999)
-* **Izabella Oliveira** - *Dev Trabralhando no projeto inicial.* - [@IzaOliveirah](https://github.com/IzaOliveirah)
+* **Izabella Oliveira** - *Dev Trabralhando no Projeto inicial.* - [@IzaOliveirah](https://github.com/IzaOliveirah)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
