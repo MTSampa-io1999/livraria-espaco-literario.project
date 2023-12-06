@@ -35,7 +35,7 @@ Este repositório contém um projeto dedicado à administração de um sistema d
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **William Gabriel** - *Dev trabalhando no Projeto inicial.* - 
+* **William Gabriel** - *Dev trabalhando no Projeto inicial.* - [@WilllianGabriel](https://github.com/WilllianGabriel)
 * **Mateus Sampaio** - *Dev trabalhando no Projeto inicial.* - [@MTSampa-io1999](https://github.com/MTSampa-io1999)
 * **Izabella Oliveira** - *Dev Trabralhando no Projeto inicial.* - [@IzaOliveirah](https://github.com/IzaOliveirah)
 
