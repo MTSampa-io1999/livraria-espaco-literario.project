@@ -202,9 +202,75 @@
                         }
                 } while (x > 0) ;
                 break;
-
+                 Console.Clear();
                 case 4:
-                
+                 Console.WriteLine("--------");
+                 Console.WriteLine("Gêneros:");
+                 Console.WriteLine("--------");
+                 Console.WriteLine("");
+
+                Console.WriteLine(" [1] AÇÃO");
+                Console.WriteLine(" [2] ROMANCE");
+                Console.WriteLine(" [3] FOLCLORE");
+                Console.WriteLine(" [4] FICÇÃO CIENTIFICA");
+                Console.WriteLine(" [5] TERROR");
+                Console.WriteLine(" [6] MANGÁS");
+                Console.WriteLine("");
+                Console.WriteLine("Escolha o numero de cada  gênero para ver os Livros Disponíveis:");
+               
+               int generos = Int32.Parse(Console.ReadLine());
+
+                switch (generos)
+                {
+                    case 1:
+                    Console.WriteLine("Categoria Ação: ");
+                    Console.WriteLine("------------------");
+                    Console.WriteLine("A Bússola de Ouro");
+                    Console.WriteLine("As Crônicas de Nárnia - Volume Único");
+                    Console.WriteLine("Ponto de Impacto");
+                    break;
+
+                    case 2:
+                    Console.WriteLine("Categoria Romance:");
+                    Console.WriteLine("------------------");
+                    Console.WriteLine("Breve Romance de Sonho");
+                    Console.WriteLine("Um Romance Inesquecível");
+                    break;
+                    case 3:
+                    Console.WriteLine("Categoria Folclore:");
+                    Console.WriteLine("------------------");
+                    Console.WriteLine("Lendas Brasileiras");
+                    Console.WriteLine("Abecê do Folclore");
+                    break;
+                    case 4:
+                    Console.WriteLine("Categoria Ficção Cientifica:");
+                    Console.WriteLine("------------------");
+                    Console.WriteLine("Frankenstein, de Mary Shelley");
+                    Console.WriteLine("Um estranho numa Terra estranha, de Robert A. Heilein");
+                    Console.WriteLine("Duna, de Frank Herbert");
+                    Console.WriteLine("Eu, robô, de Isaac Asimov");
+                    break;
+                    case 5:
+                    Console.WriteLine("Categoria Terror:");
+                    Console.WriteLine("------------------");
+                    Console.WriteLine("Horror em Amityville (Jay Anson)");
+                    Console.WriteLine("O Desfiladeiro do Medo (Clive Barker)");
+
+                    break;
+                    case 6:
+                    Console.WriteLine("Categoria Mangás:");
+                    Console.WriteLine("------------------");
+                    Console.WriteLine("One Piece Vol. 1");
+                    Console.WriteLine("One Piece Vol. 2");
+                    Console.WriteLine("Chainsaw Man Vol. 1");
+                    break;
+                    default:
+                    Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
+                    Console.ReadLine();
+                    Console.Clear();
+                    break;
+                }
+
                 break;
 
                     default:
