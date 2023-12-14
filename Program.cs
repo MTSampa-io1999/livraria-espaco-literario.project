@@ -145,8 +145,7 @@
 
                         do { 
                         Catalogo1.DisplayBookDetails("3096 DIAS - Nataha kampusch", "Nataha kampusch", 224,
-                            "A impressionante história da garota que ficou em cativeiro durante oito anos, 3096 dias, narra o drama de um dos sequestros mais longos de que se tem notícia.", 61.99m);
-
+                            "A impressionante história da garota que ficou em cativeiro durante oito anos, 3096 dias.
                         Console.WriteLine("Digite [1] para comprar o produto!, Para voltar ao Catalogo Digite [0]");
                         n = Int32.Parse(Console.ReadLine());
 
@@ -209,15 +208,16 @@
                  Console.WriteLine("--------");
                  Console.WriteLine("Gêneros:");
                  Console.WriteLine("--------");
-                 Console.WriteLine("");
-
+                                                     
+                Console.WriteLine("");
+                Console.WriteLine("----------------------------");
                 Console.WriteLine(" [1] AÇÃO");
                 Console.WriteLine(" [2] ROMANCE");
                 Console.WriteLine(" [3] LITERATURA INFANTIL");
                 Console.WriteLine(" [4] FICÇÃO CIENTIFICA");
                 Console.WriteLine(" [5] TERROR");
                 Console.WriteLine(" [6] AUTOBIOGRAFIA");
-                Console.WriteLine("");
+                Console.WriteLine("----------------------------");
                 Console.WriteLine("Escolha um dos números de um dos gêneros para ver os livros disponíveis:");
                
                int generos = Int32.Parse(Console.ReadLine());
@@ -227,46 +227,51 @@
                     case 1:
                     Console.WriteLine("Categoria Ação: ");
                     Console.WriteLine("------------------");
-                    Console.WriteLine("A Bússola de Ouro");
-                    Console.WriteLine("As Crônicas de Nárnia - Volume Único");
-                    Console.WriteLine("Ponto de Impacto");
+                    Console.WriteLine("O CÓDIGO DE DA VINCI - Dan Brown");
+                    Console.WriteLine(" O SENHOR DOS ANÉIS  - J.R.R Tolkien");
+                    Console.WriteLine(" JOGOS VORAZES - Suzanne Collins ");
+
+                    
                     break;
 
                     case 2:
                     Console.WriteLine("Categoria Romance:");
                     Console.WriteLine("------------------");
-                    Console.WriteLine("BREVE ROMANCE DE SONHO - Arthur Schnitzler ");
-                    Console.WriteLine("UM ROMANCE INESQUECÍVEL - Jessica Bird ");
-                    Console.writeLine("ANTES QUE O CAFÉ ESFRIE - Toshikazu Kawaguchi ");   
+                    Console.WriteLine(" BREVE ROMANCE DE SONHO - Arthur Schnitzler ");
+                    Console.WriteLine(" UM ROMANCE INESQUECÍVEL - Jessica Bird ");
+                    Console.writeLine(" ANTES QUE O CAFÉ ESFRIE - Toshikazu Kawaguchi ");   
                     break;
+                    
                     case 3:
                     Console.WriteLine("Categoria Literatura Infantil :");
                     Console.WriteLine("------------------");
-                    Console.WriteLine("O Pequeno Príncipe - Antoine de Saint-Exupéry  ");
-                    Console.WriteLine(" A Bolsa Amarela - Lygia Bojunga");
-                    Console.WriteLine("Marcelo, Marmelo, Martelo - Ruth Rocha ");
+                    Console.WriteLine(" O PEQUENO PRÍNCIPE - Antoine de Saint-Exupéry  ");
+                    Console.WriteLine(" A BOLSA AMARELA - Lygia Bojunga");
+                    Console.WriteLine(" MARCELO, MARMELO, MARTELO - Ruth Rocha ");
                     break;
+                    
                     case 4:
                     Console.WriteLine("Categoria Ficção Cientifica:");
                     Console.WriteLine("------------------");
-                    Console.WriteLine("Frankenstein, de Mary Shelley");
-                    Console.WriteLine("Um estranho numa Terra estranha, de Robert A. Heilein");
-                    Console.WriteLine("Duna, de Frank Herbert");
-                    
+                    Console.WriteLine(" DUNA - FRANK HERBERT");
+                    Console.WriteLine(" NEUROMANCER - DE WILLIAM GIBSON ");
+                    Console.WriteLine(" FUNDAÇÃO - ISAAC ASIMOV ");
                     break;
+                    
                     case 5:
                     Console.WriteLine("Categoria Terror:");
                     Console.WriteLine("------------------");
-                    Console.WriteLine("Horror em Amityville - Jay Anson");
-                    Console.WriteLine("O Desfiladeiro do Medo - Clive Barker ");
-
+                    Console.WriteLine(" O ILUMINADO - Stephen King");
+                    Console.WriteLine(" O SILENCIO DOS INOCENTES - Thomas Harris");
+                    Console.WriteLine("ATIVIDADE PARANORMAL - Oren Peli");
+                    
                     break;
                     case 6:
                     Console.WriteLine("Categoria Autobiografia:");
                     Console.WriteLine("------------------");
                     Console.WriteLine(" 3096 DIAS - Nataha kampusch  ");
-                    Console.WriteLine(" Em busca de mim - Viola Davis ");
-                    Console.WriteLine(" MInha História - Michelle Obama ");
+                    Console.WriteLine(" EM BUSCA DE MIM - Viola Davis ");
+                    Console.WriteLine(" MINHA HISTÓRIA - Michelle Obama ");
                    
                         break;
                     default:
