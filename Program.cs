@@ -8,11 +8,11 @@
             string email, senha, senha1, s1, email1;
 
             Console.Clear();
-            Console.WriteLine();
+            Console.WriteLine("-------------------------------------------");
             Console.WriteLine("BEM VINDO A LIVRARIA ESPAÇO LITERÁRIO!");
             Console.WriteLine("-------------------------------------------");
             Console.WriteLine();
-            Console.WriteLine("Por Favor, Faça um Cadastro para ter acesso ao nosso Catalogo!");
+            Console.WriteLine("Por Favor, faça um Cadastro para ter acesso ao nosso Catálogo!");
             Console.WriteLine();
             Console.WriteLine("Aperte qualquer botão para continuar");
             Console.ReadLine();
@@ -21,22 +21,22 @@
             do
             {
                 Console.Clear();
-                Console.WriteLine();
+                Console.WriteLine("-------------------------------------------");
                 Console.WriteLine("Faça seu Cadastro!");
                 Console.WriteLine("-------------------------------------------");
                 Console.WriteLine();
-                Console.WriteLine("Digite seu email:");
+                Console.WriteLine(" Digite seu email: ");
                 email = Console.ReadLine();
-                Console.WriteLine("Digite sua Senha:");
+                Console.WriteLine(" Digite sua senha: ");
                 senha = Console.ReadLine();
-                Console.WriteLine("Confirme sua senha:");
+                Console.WriteLine(" Confirme sua senha: ");
                 s1 = Console.ReadLine();
                 
                 if(s1 == senha){
                     y = 0;
                 }
                 else{ 
-                    Console.WriteLine("Senhas não coincidem, aperte enter para tentar" +
+                    Console.WriteLine(" Senhas não coincidem, aperte enter para tentar " +
                         "novamente...");
                     Console.ReadLine();
                     y = 1;
@@ -46,13 +46,13 @@
             do
             {
                 Console.Clear();
-                Console.WriteLine();
-                Console.WriteLine("Faça seu Login");
+                Console.WriteLine("-------------------------------------------");
+                Console.WriteLine(" Faça seu Login ");
                 Console.WriteLine("-------------------------------------------");
                 Console.WriteLine();
                 Console.WriteLine("Digite seu email:");
                 email1 = Console.ReadLine();
-                Console.WriteLine("Digite sua Senha:");
+                Console.WriteLine("Digite sua senha:");
                 senha1 = Console.ReadLine();
 
                 if (senha1 == senha)
@@ -202,8 +202,10 @@
                         }
                 } while (x > 0) ;
                 break;
+                        
                  Console.Clear();
-                case 4:
+               
+                    case 4:
                  Console.WriteLine("--------");
                  Console.WriteLine("Gêneros:");
                  Console.WriteLine("--------");
@@ -211,12 +213,12 @@
 
                 Console.WriteLine(" [1] AÇÃO");
                 Console.WriteLine(" [2] ROMANCE");
-                Console.WriteLine(" [3] FOLCLORE");
+                Console.WriteLine(" [3] LITERATURA INFANTIL");
                 Console.WriteLine(" [4] FICÇÃO CIENTIFICA");
                 Console.WriteLine(" [5] TERROR");
-                Console.WriteLine(" [6] MANGÁS");
+                Console.WriteLine(" [6] AUTOBIOGRAFIA");
                 Console.WriteLine("");
-                Console.WriteLine("Escolha o numero de cada  gênero para ver os Livros Disponíveis:");
+                Console.WriteLine("Escolha um dos números de um dos gêneros para ver os livros disponíveis:");
                
                int generos = Int32.Parse(Console.ReadLine());
 
@@ -233,14 +235,16 @@
                     case 2:
                     Console.WriteLine("Categoria Romance:");
                     Console.WriteLine("------------------");
-                    Console.WriteLine("Breve Romance de Sonho");
-                    Console.WriteLine("Um Romance Inesquecível");
+                    Console.WriteLine("BREVE ROMANCE DE SONHO - Arthur Schnitzler ");
+                    Console.WriteLine("UM ROMANCE INESQUECÍVEL - Jessica Bird ");
+                    Console.writeLine("ANTES QUE O CAFÉ ESFRIE - Toshikazu Kawaguchi ");   
                     break;
                     case 3:
-                    Console.WriteLine("Categoria Folclore:");
+                    Console.WriteLine("Categoria Literatura Infantil :");
                     Console.WriteLine("------------------");
-                    Console.WriteLine("Lendas Brasileiras");
-                    Console.WriteLine("Abecê do Folclore");
+                    Console.WriteLine("O Pequeno Príncipe - Antoine de Saint-Exupéry  ");
+                    Console.WriteLine(" A Bolsa Amarela - Lygia Bojunga");
+                    Console.WriteLine("Marcelo, Marmelo, Martelo - Ruth Rocha ");
                     break;
                     case 4:
                     Console.WriteLine("Categoria Ficção Cientifica:");
@@ -248,22 +252,23 @@
                     Console.WriteLine("Frankenstein, de Mary Shelley");
                     Console.WriteLine("Um estranho numa Terra estranha, de Robert A. Heilein");
                     Console.WriteLine("Duna, de Frank Herbert");
-                    Console.WriteLine("Eu, robô, de Isaac Asimov");
+                    
                     break;
                     case 5:
                     Console.WriteLine("Categoria Terror:");
                     Console.WriteLine("------------------");
-                    Console.WriteLine("Horror em Amityville (Jay Anson)");
-                    Console.WriteLine("O Desfiladeiro do Medo (Clive Barker)");
+                    Console.WriteLine("Horror em Amityville - Jay Anson");
+                    Console.WriteLine("O Desfiladeiro do Medo - Clive Barker ");
 
                     break;
                     case 6:
-                    Console.WriteLine("Categoria Mangás:");
+                    Console.WriteLine("Categoria Autobiografia:");
                     Console.WriteLine("------------------");
-                    Console.WriteLine("One Piece Vol. 1");
-                    Console.WriteLine("One Piece Vol. 2");
-                    Console.WriteLine("Chainsaw Man Vol. 1");
-                    break;
+                    Console.WriteLine(" 3096 DIAS - Nataha kampusch  ");
+                    Console.WriteLine(" Em busca de mim - Viola Davis ");
+                    Console.WriteLine(" MInha História - Michelle Obama ");
+                   
+                        break;
                     default:
                     Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
                     Console.ReadLine();
