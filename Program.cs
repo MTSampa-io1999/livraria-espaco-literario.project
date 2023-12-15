@@ -2,9 +2,9 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
-            int x = 0,y = 0,z = 0;
+            int x = 0, y = 0, z = 0;
             string email, senha, senha1, s1, email1;
 
             Console.Clear();
@@ -17,7 +17,7 @@
             Console.WriteLine("Aperte qualquer botão para continuar");
             Console.ReadLine();
             Console.Clear();
-            
+
             do
             {
                 Console.Clear();
@@ -31,11 +31,13 @@
                 senha = Console.ReadLine();
                 Console.WriteLine(" Confirme sua senha: ");
                 s1 = Console.ReadLine();
-                
-                if(s1 == senha){
+
+                if (s1 == senha)
+                {
                     y = 0;
                 }
-                else{ 
+                else
+                {
                     Console.WriteLine(" Senhas não coincidem, aperte enter para tentar " +
                         "novamente...");
                     Console.ReadLine();
@@ -59,7 +61,7 @@
                 {
                     z = 0;
                 }
-                if(email == email1)
+                if (email == email1)
                 {
                     z = 0;
                 }
@@ -71,14 +73,15 @@
                     z = 1;
                 }
             } while (z > 0);
-            
+
             bool VoltarAoCataLogo = false;
             int n;
-           
-            do{
+
+            do
+            {
 
                 Catalogo Catalogo1 = new Catalogo();
-                
+
                 Console.Clear();
                 Console.WriteLine("SEJA BEM-VINDO AO NOSSO CATALOGO!");
                 Console.WriteLine("-------------------------------------------");
@@ -139,53 +142,24 @@
                                     break;
                             }
                         } while (x > 0);
-                            break;
-                        
+                        break;
+
                     case 2:
 
-                        do { 
-                        Catalogo1.DisplayBookDetails("3096 DIAS - Nataha kampusch", "Nataha kampusch", 224,
-                            "A impressionante história da garota que ficou em cativeiro durante oito anos, 3096 dias.
-                        Console.WriteLine("Digite [1] para comprar o produto!, Para voltar ao Catalogo Digite [0]");
-                        n = Int32.Parse(Console.ReadLine());
-
-                        switch (n)
+                        do
                         {
-                            case 0:
-                                x = 0;
-                                VoltarAoCataLogo = true;
-                                break;
-                                case 1:
-                                    Console.WriteLine("Opção Ainda em Desenvolvimento. Tente outra Opção. Aperte qualquer botão para continuar");
-                                    Console.ReadLine();
-                                    Console.Clear();
-                                    x = 1;
-                                    break;
-                            default:
-                                Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
-                                Console.ReadLine();
-                                Console.Clear();
-                                x = 1;
-                                break;
-                        }
-                } while (x > 0) ;
-                break;
-
-                    case 3:
-
-                        do { 
-                        Catalogo1.DisplayBookDetails("O PEQUENO PRINCIPE - Antoine de Saint-Exupéry", "Antoine de Saint-Exupéry", 96,
-                            "O Pequeno Príncipe é uma obra prima que conduz o leitor a uma viagem de descobertas pela essência humana.\n Este clássico atemporal de Antoine de Saint-Exupéry narra a história sobre o encontro de um aviador e um menino com “cabelos da cor do ouro”.\n À medida que o principezinho conta ao aviador sobre sua rotina no asteroide B 612,\n sua rosa única, o perigo dos baobás, sua raposa e os moradores de outros planetas, um novo olhar sobre a vida e o mundo é revelado.", 12.99m);
-
+                            Catalogo1.DisplayBookDetails("3096 DIAS - Nataha kampusch", "Nataha kampusch", 224,
+                                "A impressionante história da garota que ficou em cativeiro durante oito anos, 3096 dias.");
+    
                             Console.WriteLine("Digite [1] para comprar o produto!, Para voltar ao Catalogo Digite [0]");
-                        n = Int32.Parse(Console.ReadLine());
+                            n = Int32.Parse(Console.ReadLine());
 
-                        switch (n)
-                        {
-                            case 0:
-                                x = 0;
-                                VoltarAoCataLogo = true;
-                                break;
+                            switch (n)
+                            {
+                                case 0:
+                                    x = 0;
+                                    VoltarAoCataLogo = true;
+                                    break;
                                 case 1:
                                     Console.WriteLine("Opção Ainda em Desenvolvimento. Tente outra Opção. Aperte qualquer botão para continuar");
                                     Console.ReadLine();
@@ -193,103 +167,242 @@
                                     x = 1;
                                     break;
                                 default:
-                                Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
-                                Console.ReadLine();
-                                Console.Clear();
-                                x = 1;
-                                break;
-                        }
-                } while (x > 0) ;
-                break;
-                        
-                 Console.Clear();
-               
-                    case 4:
-                 Console.WriteLine("--------");
-                 Console.WriteLine("Gêneros:");
-                 Console.WriteLine("--------");
-                                                     
-                Console.WriteLine("");
-                Console.WriteLine("----------------------------");
-                Console.WriteLine(" [1] AÇÃO");
-                Console.WriteLine(" [2] ROMANCE");
-                Console.WriteLine(" [3] LITERATURA INFANTIL");
-                Console.WriteLine(" [4] FICÇÃO CIENTIFICA");
-                Console.WriteLine(" [5] TERROR");
-                Console.WriteLine(" [6] AUTOBIOGRAFIA");
-                Console.WriteLine("----------------------------");
-                Console.WriteLine("Escolha um dos números de um dos gêneros para ver os livros disponíveis:");
-               
-               int generos = Int32.Parse(Console.ReadLine());
+                                    Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
+                                    Console.ReadLine();
+                                    Console.Clear();
+                                    x = 1;
+                                    break;
+                            }
+                        } while (x > 0);
+                        break;
 
-                switch (generos)
-                {
-                    case 1:
-                    Console.WriteLine("Categoria Ação: ");
-                    Console.WriteLine("------------------");
-                    Console.WriteLine("O CÓDIGO DE DA VINCI - Dan Brown");
-                    Console.WriteLine(" O SENHOR DOS ANÉIS  - J.R.R Tolkien");
-                    Console.WriteLine(" JOGOS VORAZES - Suzanne Collins ");
-
-                    
-                    break;
-
-                    case 2:
-                    Console.WriteLine("Categoria Romance:");
-                    Console.WriteLine("------------------");
-                    Console.WriteLine(" BREVE ROMANCE DE SONHO - Arthur Schnitzler ");
-                    Console.WriteLine(" UM ROMANCE INESQUECÍVEL - Jessica Bird ");
-                    Console.writeLine(" ANTES QUE O CAFÉ ESFRIE - Toshikazu Kawaguchi ");   
-                    break;
-                    
                     case 3:
-                    Console.WriteLine("Categoria Literatura Infantil :");
-                    Console.WriteLine("------------------");
-                    Console.WriteLine(" O PEQUENO PRÍNCIPE - Antoine de Saint-Exupéry  ");
-                    Console.WriteLine(" A BOLSA AMARELA - Lygia Bojunga");
-                    Console.WriteLine(" MARCELO, MARMELO, MARTELO - Ruth Rocha ");
-                    break;
-                    
+
+                        do
+                        {
+                            Catalogo1.DisplayBookDetails("O PEQUENO PRINCIPE - Antoine de Saint-Exupéry", "Antoine de Saint-Exupéry", 96,
+                                "O Pequeno Príncipe é uma obra prima que conduz o leitor a uma viagem de descobertas pela essência humana.\n Este clássico atemporal de Antoine de Saint-Exupéry narra a história sobre o encontro de um aviador e um menino com “cabelos da cor do ouro”.\n À medida que o principezinho conta ao aviador sobre sua rotina no asteroide B 612,\n sua rosa única, o perigo dos baobás, sua raposa e os moradores de outros planetas, um novo olhar sobre a vida e o mundo é revelado.", 12.99m);
+
+                            Console.WriteLine("Digite [1] para comprar o produto!, Para voltar ao Catalogo Digite [0]");
+                            n = Int32.Parse(Console.ReadLine());
+
+                            switch (n)
+                            {
+                                case 0:
+                                    x = 0;
+                                    VoltarAoCataLogo = true;
+                                    break;
+                                case 1:
+                                    Console.WriteLine("Opção Ainda em Desenvolvimento. Tente outra Opção. Aperte qualquer botão para continuar");
+                                    Console.ReadLine();
+                                    Console.Clear();
+                                    x = 1;
+                                    break;
+                                default:
+                                    Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
+                                    Console.ReadLine();
+                                    Console.Clear();
+                                    x = 1;
+                                    break;
+                            }
+                        } while (x > 0);
+                        break;
+
+                        Console.Clear();
+
                     case 4:
-                    Console.WriteLine("Categoria Ficção Cientifica:");
-                    Console.WriteLine("------------------");
-                    Console.WriteLine(" DUNA - FRANK HERBERT");
-                    Console.WriteLine(" NEUROMANCER - DE WILLIAM GIBSON ");
-                    Console.WriteLine(" FUNDAÇÃO - ISAAC ASIMOV ");
-                    break;
-                    
-                    case 5:
-                    Console.WriteLine("Categoria Terror:");
-                    Console.WriteLine("------------------");
-                    Console.WriteLine(" O ILUMINADO - Stephen King");
-                    Console.WriteLine(" O SILENCIO DOS INOCENTES - Thomas Harris");
-                    Console.WriteLine("ATIVIDADE PARANORMAL - Oren Peli");
-                    
-                    break;
-                    case 6:
-                    Console.WriteLine("Categoria Autobiografia:");
-                    Console.WriteLine("------------------");
-                    Console.WriteLine(" 3096 DIAS - Nataha kampusch  ");
-                    Console.WriteLine(" EM BUSCA DE MIM - Viola Davis ");
-                    Console.WriteLine(" MINHA HISTÓRIA - Michelle Obama ");
-                   
-                        break;
-                    default:
-                    Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
-                    Console.ReadLine();
-                    Console.Clear();
-                    break;
-                }
 
-                break;
+                        do
+                        {
+                            Console.WriteLine("--------");
+                            Console.WriteLine("Gêneros:");
+                            Console.WriteLine("--------");
 
-                    default:
+                            Console.WriteLine("");
+                            Console.WriteLine("----------------------------");
+                            Console.WriteLine(" [1] AÇÃO");
+                            Console.WriteLine(" [2] ROMANCE");
+                            Console.WriteLine(" [3] LITERATURA INFANTIL");
+                            Console.WriteLine(" [4] FICÇÃO CIENTIFICA");
+                            Console.WriteLine(" [5] TERROR");
+                            Console.WriteLine(" [6] AUTOBIOGRAFIA");
+                            Console.WriteLine("----------------------------");
+                            Console.WriteLine("Escolha um dos números de um dos gêneros para ver os livros disponíveis:");
+
+                            int generos = Int32.Parse(Console.ReadLine());
+
+                            switch (generos)
+                            {
+                                case 1:
+                                    Console.WriteLine("Categoria Ação: ");
+                                    Console.WriteLine("------------------");
+                                    Console.WriteLine("O CÓDIGO DE DA VINCI - Dan Brown");
+                                    Console.WriteLine(" O SENHOR DOS ANÉIS  - J.R.R Tolkien");
+                                    Console.WriteLine(" JOGOS VORAZES - Suzanne Collins ");
+
+                                    Console.WriteLine("Para voltar ao Catalogo Digite [0]");
+                                    n = Int32.Parse(Console.ReadLine());
+
+                                    switch (n)
+                                    {
+                                        case 0:
+                                            x = 0;
+                                            VoltarAoCataLogo = true;
+                                            break;
+                                        default:
+                                            Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
+                                            Console.ReadLine();
+                                            Console.Clear();
+                                            x = 1;
+                                            break;
+                                    }
+
+                                    break;
+
+                                case 2:
+                                    Console.WriteLine("Categoria Romance:");
+                                    Console.WriteLine("------------------");
+                                    Console.WriteLine(" BREVE ROMANCE DE SONHO - Arthur Schnitzler ");
+                                    Console.WriteLine(" UM ROMANCE INESQUECÍVEL - Jessica Bird ");
+                                    Console.WriteLine(" ANTES QUE O CAFÉ ESFRIE - Toshikazu Kawaguchi ");
+
+                                    Console.WriteLine("Para voltar ao Catalogo Digite [0]");
+                                    n = Int32.Parse(Console.ReadLine());
+
+                                    switch (n)
+                                    {
+                                        case 0:
+                                            x = 0;
+                                            VoltarAoCataLogo = true;
+                                            break;
+                                        default:
+                                            Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
+                                            Console.ReadLine();
+                                            Console.Clear();
+                                            x = 1;
+                                            break;
+                                    }
+                                    break;
+
+                                case 3:
+                                    Console.WriteLine("Categoria Literatura Infantil :");
+                                    Console.WriteLine("------------------");
+                                    Console.WriteLine(" O PEQUENO PRÍNCIPE - Antoine de Saint-Exupéry  ");
+                                    Console.WriteLine(" A BOLSA AMARELA - Lygia Bojunga");
+                                    Console.WriteLine(" MARCELO, MARMELO, MARTELO - Ruth Rocha ");
+
+                                    Console.WriteLine("Para voltar ao Catalogo Digite [0]");
+                                    n = Int32.Parse(Console.ReadLine());
+
+                                    switch (n)
+                                    {
+                                        case 0:
+                                            x = 0;
+                                            VoltarAoCataLogo = true;
+                                            break;
+                                        default:
+                                            Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
+                                            Console.ReadLine();
+                                            Console.Clear();
+                                            x = 1;
+                                            break;
+                                    }
+                                    break;
+
+                                case 4:
+                                    Console.WriteLine("Categoria Ficção Cientifica:");
+                                    Console.WriteLine("------------------");
+                                    Console.WriteLine(" DUNA - FRANK HERBERT");
+                                    Console.WriteLine(" NEUROMANCER - DE WILLIAM GIBSON ");
+                                    Console.WriteLine(" FUNDAÇÃO - ISAAC ASIMOV ");
+
+                                    Console.WriteLine("Para voltar ao Catalogo Digite [0]");
+                                    n = Int32.Parse(Console.ReadLine());
+
+                                    switch (n)
+                                    {
+                                        case 0:
+                                            x = 0;
+                                            VoltarAoCataLogo = true;
+                                            break;
+                                        default:
+                                            Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
+                                            Console.ReadLine();
+                                            Console.Clear();
+                                            x = 1;
+                                            break;
+                                    }
+                                    break;
+
+                                case 5:
+                                    Console.WriteLine("Categoria Terror:");
+                                    Console.WriteLine("------------------");
+                                    Console.WriteLine(" O ILUMINADO - Stephen King");
+                                    Console.WriteLine(" O SILENCIO DOS INOCENTES - Thomas Harris");
+                                    Console.WriteLine("ATIVIDADE PARANORMAL - Oren Peli");
+
+                                    Console.WriteLine("Para voltar ao Catalogo Digite [0]");
+                                    n = Int32.Parse(Console.ReadLine());
+
+                                    switch (n)
+                                    {
+                                        case 0:
+                                            x = 0;
+                                            VoltarAoCataLogo = true;
+                                            break;
+                                        default:
+                                            Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
+                                            Console.ReadLine();
+                                            Console.Clear();
+                                            x = 1;
+                                            break;
+                                    }
+
+                                    break;
+                                case 6:
+                                    Console.WriteLine("Categoria Autobiografia:");
+                                    Console.WriteLine("------------------");
+                                    Console.WriteLine(" 3096 DIAS - Nataha kampusch  ");
+                                    Console.WriteLine(" EM BUSCA DE MIM - Viola Davis ");
+                                    Console.WriteLine(" MINHA HISTÓRIA - Michelle Obama ");
+
+                                    Console.WriteLine("Para voltar ao Catalogo Digite [0]");
+                                    n = Int32.Parse(Console.ReadLine());
+
+                                    switch (n)
+                                    {
+                                        case 0:
+                                            x = 0;
+                                            VoltarAoCataLogo = true;
+                                            break;
+                                        default:
+                                            Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
+                                            Console.ReadLine();
+                                            Console.Clear();
+                                            x = 1;
+                                            break;
+                                    }
+
+                                    break;
+                                default:
+                                    Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
+                                    Console.ReadLine();
+                                    Console.Clear();
+                                    x = 1;
+                                    break;
+                            }
+                        } while (x > 0);
+
+                            break;
+
+                            default:
                         Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
-                        Console.ReadLine();
-                        VoltarAoCataLogo = true;
-                        break;
+                            Console.ReadLine();
+                            VoltarAoCataLogo = true;
+                            break;
                 }
             } while (VoltarAoCataLogo);
+        }
         }
     }
 }
