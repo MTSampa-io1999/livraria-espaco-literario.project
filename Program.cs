@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            int x = 0, y = 0, z = 0;
+            int x = 0, y = 0, z = 0,g = 0,r = 0;
             string email, senha, senha1, s1, email1;
 
             Console.Clear();
@@ -111,7 +111,6 @@
                     case 0:
                         VoltarAoCataLogo = false;
                         break;
-
                     case 1:
 
                         do
@@ -119,7 +118,7 @@
                             Catalogo1.DisplayBookDetails("ANTES QUE O CAFÉ ESFRIE - Toshikazu Kawaguchi", "Toshikazu Kawaguchi", 208,
                                 "Se fosse possível viajar no tempo, quem você gostaria de encontrar? ...", 27.99m);
 
-                            Console.WriteLine("Digite [1] para comprar o produto!, Para voltar ao Catalogo Digite [0]");
+                            Console.WriteLine("Digite [1] para Adicionar ao Carrinho!, Para voltar ao Catalogo Digite [0]");
                             n = Int32.Parse(Console.ReadLine());
 
                             switch (n)
@@ -129,7 +128,7 @@
                                     VoltarAoCataLogo = true;
                                     break;
                                 case 1:
-                                    Console.WriteLine("Opção Ainda em Desenvolvimento. Tente outra Opção. Aperte qualquer botão para continuar");
+                                    Console.WriteLine("ADICIONADO!. Aperte qualquer botão para continuar");
                                     Console.ReadLine();
                                     Console.Clear();
                                     x = 1;
@@ -151,7 +150,7 @@
                             Catalogo1.DisplayBookDetails("3096 DIAS - Nataha kampusch", "Nataha kampusch", 224,
                                 "A impressionante história da garota que ficou em cativeiro durante oito anos, 3096 dias.", 37.99m);
     
-                            Console.WriteLine("Digite [1] para comprar o produto!, Para voltar ao Catalogo Digite [0]");
+                            Console.WriteLine("Digite [1] para Adicionar ao Carrinho!, Para voltar ao Catalogo Digite [0]");
                             n = Int32.Parse(Console.ReadLine());
 
                             switch (n)
@@ -161,7 +160,7 @@
                                     VoltarAoCataLogo = true;
                                     break;
                                 case 1:
-                                    Console.WriteLine("Opção Ainda em Desenvolvimento. Tente outra Opção. Aperte qualquer botão para continuar");
+                                     Console.WriteLine("ADICIONADO!. Aperte qualquer botão para continuar");
                                     Console.ReadLine();
                                     Console.Clear();
                                     x = 1;
@@ -183,7 +182,7 @@
                             Catalogo1.DisplayBookDetails("O PEQUENO PRINCIPE - Antoine de Saint-Exupéry", "Antoine de Saint-Exupéry", 96,
                                 "O Pequeno Príncipe é uma obra prima que conduz o leitor a uma viagem de descobertas pela essência humana.\n Este clássico atemporal de Antoine de Saint-Exupéry narra a história sobre o encontro de um aviador e um menino com “cabelos da cor do ouro”.\n À medida que o principezinho conta ao aviador sobre sua rotina no asteroide B 612,\n sua rosa única, o perigo dos baobás, sua raposa e os moradores de outros planetas, um novo olhar sobre a vida e o mundo é revelado.", 12.99m);
 
-                            Console.WriteLine("Digite [1] para comprar o produto!, Para voltar ao Catalogo Digite [0]");
+                            Console.WriteLine("Digite [1] para Adicionar ao Carrinho!, Para voltar ao Catalogo Digite [0]");
                             n = Int32.Parse(Console.ReadLine());
 
                             switch (n)
@@ -193,7 +192,7 @@
                                     VoltarAoCataLogo = true;
                                     break;
                                 case 1:
-                                    Console.WriteLine("Opção Ainda em Desenvolvimento. Tente outra Opção. Aperte qualquer botão para continuar");
+                                     Console.WriteLine("ADICIONADO!. Aperte qualquer botão para continuar");
                                     Console.ReadLine();
                                     Console.Clear();
                                     x = 1;
@@ -214,6 +213,7 @@
 
                         do
                         {
+                            Console.Clear();
                             Console.WriteLine("--------");
                             Console.WriteLine("Gêneros:");
                             Console.WriteLine("--------");
@@ -228,36 +228,47 @@
                             Console.WriteLine(" [6] AUTOBIOGRAFIA");
                             Console.WriteLine("----------------------------");
                             Console.WriteLine("Escolha um dos números de um dos gêneros para ver os livros disponíveis:");
+                            Console.WriteLine("");
+                            Console.WriteLine("Para voltar ao Catalogo Digite [0]");
 
                             int generos = Int32.Parse(Console.ReadLine());
                             Console.Clear();
                             
                             switch (generos)
                             {
+                                case 0:
+                                r = 0;
+                                g = 0;
+                                VoltarAoCataLogo = true;
+                                break;
+
                                 case 1:
+
+                                do{
                                     Console.WriteLine("Categoria Ação: ");
                                     Console.WriteLine("------------------");
                                     Catalogo1.DisplayBookDetails("O CÓDIGO DE DA VINCI - Dan Brown" ,"Dan Brown",97,"Perfeição num best-seller. Um suspense divertidamente erudito, que se delicia levando os leitores numa caçada ofegante e guiando-os através de situações complicadas. – The New York Times",37.77m);
                                     Console.WriteLine(" O SENHOR DOS ANÉIS  - J.R.R Tolkien");
                                     Console.WriteLine(" JOGOS VORAZES - Suzanne Collins ");
-                                    
-                                    Console.WriteLine("Para voltar ao Catalogo Digite [0]");
+                                    Console.WriteLine();
+                                    Console.WriteLine("Para voltar aos Generos Digite [0]");
                                     n = Int32.Parse(Console.ReadLine());
 
                                     switch (n)
                                     {
-                                        case 0:
-                                            x = 0;
-                                            VoltarAoCataLogo = true;
-                                            break;
+                                       case 0:
+                                       r = 0;
+                                     g = 1;
+                                    break;
+                                    
                                         default:
                                             Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
                                             Console.ReadLine();
                                             Console.Clear();
-                                            x = 1;
+                                            r = 1;
                                             break;
                                     }
-
+                                }while(r > 0);
                                     break;
 
                                 case 2:
@@ -267,20 +278,20 @@
                                     Console.WriteLine(" UM ROMANCE INESQUECÍVEL - Jessica Bird ");
                                     Console.WriteLine(" ANTES QUE O CAFÉ ESFRIE - Toshikazu Kawaguchi ");
 
-                                    Console.WriteLine("Para voltar ao Catalogo Digite [0]");
+                                    Console.WriteLine("Para voltar aos Generos Digite [0]");
                                     n = Int32.Parse(Console.ReadLine());
 
                                     switch (n)
                                     {
                                         case 0:
-                                            x = 0;
-                                            VoltarAoCataLogo = true;
+                                            r = 0;
+                                     g = 1;
                                             break;
                                         default:
                                             Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
                                             Console.ReadLine();
                                             Console.Clear();
-                                            x = 1;
+                                            
                                             break;
                                     }
                                     break;
@@ -292,20 +303,20 @@
                                     Console.WriteLine(" A BOLSA AMARELA - Lygia Bojunga");
                                     Console.WriteLine(" MARCELO, MARMELO, MARTELO - Ruth Rocha ");
 
-                                    Console.WriteLine("Para voltar ao Catalogo Digite [0]");
+                                    Console.WriteLine("Para voltar aos Generos Digite [0]");
                                     n = Int32.Parse(Console.ReadLine());
 
                                     switch (n)
                                     {
                                         case 0:
-                                            x = 0;
-                                            VoltarAoCataLogo = true;
+                                            r = 0;
+                                     g = 1;
                                             break;
                                         default:
                                             Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
                                             Console.ReadLine();
                                             Console.Clear();
-                                            x = 1;
+                                            
                                             break;
                                     }
                                     break;
@@ -317,20 +328,20 @@
                                     Console.WriteLine(" NEUROMANCER - DE WILLIAM GIBSON ");
                                     Console.WriteLine(" FUNDAÇÃO - ISAAC ASIMOV ");
 
-                                    Console.WriteLine("Para voltar ao Catalogo Digite [0]");
+                                    Console.WriteLine("Para voltar aos Generos Digite [0]");
                                     n = Int32.Parse(Console.ReadLine());
 
                                     switch (n)
                                     {
                                         case 0:
-                                            x = 0;
-                                            VoltarAoCataLogo = true;
+                                            r = 0;
+                                     g = 1;
                                             break;
                                         default:
                                             Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
                                             Console.ReadLine();
                                             Console.Clear();
-                                            x = 1;
+                                            
                                             break;
                                     }
                                     break;
@@ -342,20 +353,20 @@
                                     Console.WriteLine(" O SILENCIO DOS INOCENTES - Thomas Harris");
                                     Console.WriteLine("ATIVIDADE PARANORMAL - Oren Peli");
 
-                                    Console.WriteLine("Para voltar ao Catalogo Digite [0]");
+                                    Console.WriteLine("Para voltar aos Generos Digite [0]");
                                     n = Int32.Parse(Console.ReadLine());
 
                                     switch (n)
                                     {
                                         case 0:
-                                            x = 0;
-                                            VoltarAoCataLogo = true;
+                                             r = 0;
+                                     g = 1;
                                             break;
                                         default:
                                             Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
                                             Console.ReadLine();
                                             Console.Clear();
-                                            x = 1;
+                                            
                                             break;
                                     }
 
@@ -367,20 +378,20 @@
                                     Console.WriteLine(" EM BUSCA DE MIM - Viola Davis ");
                                     Console.WriteLine(" MINHA HISTÓRIA - Michelle Obama ");
 
-                                    Console.WriteLine("Para voltar ao Catalogo Digite [0]");
+                                    Console.WriteLine("Para voltar aos Generos Digite [0]");
                                     n = Int32.Parse(Console.ReadLine());
 
                                     switch (n)
                                     {
                                         case 0:
-                                            x = 0;
-                                            VoltarAoCataLogo = true;
+                                             r = 0;
+                                     g = 1;
                                             break;
                                         default:
                                             Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
                                             Console.ReadLine();
                                             Console.Clear();
-                                            x = 1;
+                                            
                                             break;
                                     }
 
@@ -389,10 +400,10 @@
                                     Console.WriteLine("Opção inválida. Tente novamente. Aperte qualquer botão para continuar");
                                     Console.ReadLine();
                                     Console.Clear();
-                                    x = 1;
+                                    g = 1;
                                     break;
                             }
-                        } while (x > 0);
+                        } while (g > 0);
 
                             break;
 
@@ -401,7 +412,6 @@
                             Console.ReadLine();
                             VoltarAoCataLogo = true;
                             break;
-                        
                 }
             } while (VoltarAoCataLogo);
         }
