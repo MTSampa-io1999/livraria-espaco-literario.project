@@ -230,17 +230,16 @@
                             Console.WriteLine("Escolha um dos números de um dos gêneros para ver os livros disponíveis:");
 
                             int generos = Int32.Parse(Console.ReadLine());
-                            Console.Clear();
 
                             switch (generos)
                             {
                                 case 1:
                                     Console.WriteLine("Categoria Ação: ");
                                     Console.WriteLine("------------------");
-                                    Console.WriteLine("O CÓDIGO DE DA VINCI - Dan Brown");
+                                    Catalogo1.DisplayBookDetails("O CÓDIGO DE DA VINCI - Dan Brown" ,"Dan Brown",97,"Perfeição num best-seller. Um suspense divertidamente erudito, que se delicia levando os leitores numa caçada ofegante e guiando-os através de situações complicadas. – The New York Times",37.77m);
                                     Console.WriteLine(" O SENHOR DOS ANÉIS  - J.R.R Tolkien");
                                     Console.WriteLine(" JOGOS VORAZES - Suzanne Collins ");
-
+                                    
                                     Console.WriteLine("Para voltar ao Catalogo Digite [0]");
                                     n = Int32.Parse(Console.ReadLine());
 
