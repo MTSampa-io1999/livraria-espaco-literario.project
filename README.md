@@ -3,7 +3,8 @@ Projeto Referente a Administração de um sistema de uma livraria.
 
 ## Resumo do Repositório GitHub - 
 
- <img widht=500 height=500 alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://private-user-images.githubusercontent.com/123251786/287715682-e2852d5f-1194-4641-85e8-678bf45cf9df.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE2OTc1ODcsIm5iZiI6MTcwMTY5NzI4NywicGF0aCI6Ii8xMjMyNTE3ODYvMjg3NzE1NjgyLWUyODUyZDVmLTExOTQtNDY0MS04NWU4LTY3OGJmNDVjZjlkZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNFQxMzQxMjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMTU1M2UwMDhmNDE3ZmZmNzQ4NjI5Y2U1ZjAyODM2ZmU3ZjlhOTYyZjZlMWE4MmQzN2YyZGEyOWFhNDBlOTQzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.A6CR8E1GSnKshTlexME2qkE7ZzFVz8yj7uuZundAgtU">
+![octocat-1702606269890](https://github.com/MTSampa-io1999/livraria-espaco-literario.project/assets/123251786/75e6176c-b1db-4839-9c89-c06583d9725f)
+
 
 Este repositório contém um projeto dedicado à administração de um sistema de livraria, desenvolvido em linguagem C#.   Até o momento, foram implementadas funcionalidades essenciais, incluindo:
 
