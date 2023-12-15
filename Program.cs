@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-       static void Main(string[] args)
+        static void Main(string[] args)
         {
             int x = 0, y = 0, z = 0;
             string email, senha, senha1, s1, email1;
@@ -149,7 +149,7 @@
                         do
                         {
                             Catalogo1.DisplayBookDetails("3096 DIAS - Nataha kampusch", "Nataha kampusch", 224,
-                                "A impressionante história da garota que ficou em cativeiro durante oito anos, 3096 dias.");
+                                "A impressionante história da garota que ficou em cativeiro durante oito anos, 3096 dias.", 37.99m);
     
                             Console.WriteLine("Digite [1] para comprar o produto!, Para voltar ao Catalogo Digite [0]");
                             n = Int32.Parse(Console.ReadLine());
@@ -400,9 +400,9 @@
                             Console.ReadLine();
                             VoltarAoCataLogo = true;
                             break;
+                        
                 }
             } while (VoltarAoCataLogo);
-        }
         }
     }
 }
