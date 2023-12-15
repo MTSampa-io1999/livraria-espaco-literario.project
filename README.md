@@ -7,7 +7,7 @@ Projeto Referente a Administração de um sistema de uma livraria.
 
 
 Este repositório contém um projeto dedicado à administração de um sistema de livraria, desenvolvido em linguagem C#.   Até o momento, foram implementadas funcionalidades essenciais, incluindo:
-
+# Requisitos/ Funcionais
 **Autenticação e Cadastro de Usuários:**
 
  + Uma tela de login que permite aos usuários acessarem o sistema.
@@ -34,7 +34,6 @@ Este repositório contém um projeto dedicado à administração de um sistema d
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 * **William Gabriel** - *Dev trabalhando no Projeto inicial.* - [@WilllianGabriel](https://github.com/WilllianGabriel)
 * **Mateus Sampaio** - *Dev trabalhando no Projeto inicial.* - [@MTSampa-io1999](https://github.com/MTSampa-io1999)
