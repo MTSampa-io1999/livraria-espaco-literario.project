@@ -230,6 +230,7 @@
                             Console.WriteLine("Escolha um dos números de um dos gêneros para ver os livros disponíveis:");
 
                             int generos = Int32.Parse(Console.ReadLine());
+                            Console.Clear();
 
                             switch (generos)
                             {
